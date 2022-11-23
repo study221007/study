@@ -17,6 +17,6 @@ public class TestController {
 
   @PostMapping
   public ResponseEntity<?> create() {
-    return ResponseEntity.ok("created!!");
+    return ResponseEntity.ok("created!");
   }
 }
