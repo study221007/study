@@ -1,6 +1,7 @@
 package study.sportstoto.controller;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,7 @@ public class TestController {
   @GetMapping
   public ResponseEntity<String> get() {
     return ResponseEntity.ok("get success!");
-    
+
   }
 
   @PostMapping
@@ -24,5 +25,10 @@ public class TestController {
   @GetMapping
   public ResponseEntity<String> getTest() {
     return ResponseEntity.noContent().build();
+  }
+
+  @DeleteMapping
+  public ResponseEntity<String> getTest1() {
+    
   }
 }
