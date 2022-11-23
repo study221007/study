@@ -29,6 +29,6 @@ public class TestController {
 
   @DeleteMapping
   public ResponseEntity<String> getTest1() {
-    
+    return ResponseEntity.noContent().build();
   }
 }
