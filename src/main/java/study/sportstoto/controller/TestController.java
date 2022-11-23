@@ -19,4 +19,9 @@ public class TestController {
   public ResponseEntity<?> create() {
     return ResponseEntity.ok("created!");
   }
+
+  @GetMapping
+  public ResponseEntity<String> getTest() {
+    return ResponseEntity.noContent().build();
+  }
 }
